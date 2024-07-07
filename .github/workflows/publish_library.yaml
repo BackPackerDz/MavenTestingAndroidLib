@@ -21,4 +21,5 @@ jobs:
       - name: Publish package
         run: ./gradlew publish
         env:
+          GITHUB_USER: ${{ secrets.PUBLISH_USER }}
           GITHUB_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
